@@ -1,0 +1,8 @@
+build/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+.DS_Store
+*.swp
+*.orig
+*~.nib
+
