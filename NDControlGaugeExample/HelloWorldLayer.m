@@ -80,7 +80,7 @@
         // Adds gauge to this layer
         [self addChild:gauge z:1 tag:kGaugeTag];
         
-        // setup event handlers
+        // Sets up event handlers
         [gauge addTarget:self action:@selector(touchDown:) forControlEvents:CCControlEventTouchDown];
         [gauge addTarget:self action:@selector(touchCancel:) forControlEvents:CCControlEventTouchCancel];
         [gauge addTarget:self action:@selector(valueChanged:) forControlEvents:CCControlEventValueChanged];
@@ -93,7 +93,6 @@
         
         // Creates a button that toggles the gauge
         CCSprite *normal = [CCSprite spriteWithFile:@"Icon-Small.png"];
-        // This button toggles the gauge's enabled state
         NDControlButton *gaugeOnOffButton = [NDControlButton buttonWithNormalSprite:normal];
         gaugeOnOffButton.position = ccp(0.5 * size.width, 30.0f);
         [self addChild:gaugeOnOffButton z:1 tag:kOnOffButton];

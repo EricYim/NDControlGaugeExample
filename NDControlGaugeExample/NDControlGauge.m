@@ -146,7 +146,6 @@
             float width = self.childrenAnchorPointInPixels.x + minX_ + level_ * (maxX_ - minX_);
             CGRect textureRect = contentNormalSprite.textureRect;
             textureRect = CGRectMake(textureRect.origin.x, textureRect.origin.y, width, textureRect.size.height);
-            //textureRect = CGRectMake(textureRect.origin.x + textureRect.size.width - width, textureRect.origin.y, width, textureRect.size.height);
             contentNormalSprite.textureRect = textureRect;
             
             // Sends value changed event related actions

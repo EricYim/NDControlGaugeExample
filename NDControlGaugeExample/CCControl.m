@@ -121,7 +121,7 @@
         
         
         controlPriority_ = kCCMenuTouchPriority;
-        self.anchorPoint = CGPointMake(0.5f, 0.5f);
+        anchorPoint_ = CGPointMake(0.5f, 0.5f);
         
         // Initialise the tables
         dispatchTable_ = [[NSMutableDictionary alloc] initWithCapacity:1];
